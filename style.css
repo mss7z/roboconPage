@@ -201,3 +201,11 @@ hr{
 		border-bottom:solid 0.4em white;
 	}
 }
+
+#mainChar h2 {
+	display:inline-block;
+	padding-right:5em;
+	width:auto;
+	border-bottom: solid 0.16em #364675;
+}
+
