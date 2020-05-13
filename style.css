@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+.dispNone{
+	display:none;
+}
+hr{
+	clear:both;
+	border:none;
+}
+
+@media (max-width: 767px){
+	.mother {
+		width:auto;
+		margin:0 auto;
+	}
+}
+@media (min-width: 768px) and (max-width:899px){
+	.mother {
+		width:auto;
+		margin:0 auto;
+	}
+}
+@media (min-width:900px){
+	.mother {
+		width:880px;
+		margin:0 auto;
+	}
+}
+
+#header {
+	display:block;
+	width:auto; 
+}
+#header *,#header {
+	background-color:#364675;
+	color:white;
+}
+@media (max-width: 767px){
+	#header{
+		height:3.5em;
+	}
+	
+	#burgerButton {
+		position:absolute;
+		top:0;
+		right:0;
+		z-index:101;
+		cursor:pointer;
+	}
+	#burgerInput:checked ~ * #burgerButton{
+		position:fixed;
+	}
+	#burgerButton p {
+		float:left;
+		line-height:3.5em;
+	}
+	#burger {
+		position:relative;
+		height:2em; width:2em;
+		margin:0.75em;
+		float:left;
+	}
+	#burger div{
+		position:absolute;
+		height:0.2em; width:100%;
+		background-color:white;
+		transition:300ms ease;
+	}
+	#burger div:nth-of-type(1){
+		top:0;
+	}
+	#burgerInput:checked ~ * #burger div:nth-of-type(1){
+		transform:translateY(0.9em) rotateZ(-45deg);
+	}
+	#burger div:nth-of-type(2){
+		top:45%;
+	}
+	#burgerInput:checked ~ * #burger div:nth-of-type(2){
+		opacity:0;
+	}
+	#burger div:nth-of-type(3){
+		bottom:0;
+	}
+	#burgerInput:checked ~ * #burger div:nth-of-type(3){
+		transform:translateY(-0.9em) rotateZ(-135deg);
+	}
+	
+	#headerNav {
+		position:fixed;
+		overflow:auto;
+		width:100%;
+		height:auto;
+		max-height:100%;
+		bottom:100%;
+		left:0;
+		z-index:100;
+		transform:translateY(0%);
+		transition:300ms ease;
+	}
+	#headerNavPadding {
+		height:3.5em;
+	}
+	#burgerInput:checked ~ #headerNav{
+		transform:translateY(100%);
+	}
+	
+	/*メニューを開いた時の背景となる薄黒い何か*/
+	#burgerBack {
+		position:fixed;
+		height:100%; width:100%;
+		bottom:100%;
+		left:0;
+		z-index:99;
+		background-color:black;
+		opacity:0;
+		transform: translateY(0%);
+		transition: 300ms ease;
+	}
+	#burgerInput:checked ~ #burgerBack {
+		transform: translateY(100%);
+		opacity:0.7;
+		cursor:pointer;
+	}
+	
+	/*メニューの中身*/
+	#headerNav li{
+		list-style-type:none;
+	}
+	#headerNav *:first-child a {
+		border-top:1px solid rgba(255,255,255,0.3);
+	}
+	#headerNav a {
+		display:block;
+		width:auto; height:3em;
+		padding-top:1em;
+		line-height:1;
+		text-align:center;
+		box-sizing:border-box;
+		border-bottom:1px solid rgba(255,255,255,0.3);
+	}
+}
+@media (min-width: 768px){
+	#header{
+		height:auto;
+	}
+	#headerLogo {
+		height:80px;
+		width:200px;
+		background-color:red;
+		float:left;
+	}
+	#burgerButton{
+		display:none;
+	}
+	/*メニューの中身*/
+	
+	#headerNavPadding{
+		float:right;
+		height:2em;
+	}
+	#headerNav ul{
+		clear:right;
+		float:right;
+	}
+	#headerNav li{
+		list-style-type:none;
+		display:inline;
+		float:left;
+	}
+	#headerNav a {
+		display:block;
+		width:8em; height:4em;
+		padding-top:2em;
+		/*margin-top:5em;*/
+		
+		line-height:1;
+		text-align:center;
+		box-sizing:border-box;
+		transition:border-bottom 300ms ease;
+	}
+	#headerNav a:hover {
+		border-bottom:solid 0.4em white;
+	}
+}
