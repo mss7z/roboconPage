@@ -42,12 +42,12 @@ hr{
 @media (max-width: 767px){
 	#header{
 		height:
-			3.5em;/* #csid line cssHeaderHeight */
+			5em;/* #csid line cssHeaderHeight */
 	}
 	#headerMain{
 		width:100%;
 		height:
-			3.5em;/* #csid line cssHeaderHeight */
+			5em;/* #csid line cssHeaderHeight */
 		position:relative;
 		z-index:101;
 	}
@@ -55,10 +55,20 @@ hr{
 		position:fixed;
 	}
 	#headerLogo {
-		height:50px;
-		width:200px;
-		background-color:red;
+		height:4.5em;
 		float:left;
+		margin:0.3em 0.3em 0em 0.3em;
+	}
+	#headerLogoImg {
+		float:left;
+		height:auto;
+		width:auto;
+		max-height:100%;
+	}
+	#headerLogoChar {
+		float:left;
+		padding-top:0.75em;
+		height:3em;
 	}
 	
 	#burgerButton {
@@ -68,15 +78,15 @@ hr{
 		cursor:pointer;
 	}
 	#burgerButton p {
-		float:left;
-		line-height:
-			3.5em;/* #csid line cssHeaderHeight */
+		width:100%;
+		font-size:0.6em;
+		line-height:0.8em;
+		text-align:center;
 	}
 	#burger {
 		position:relative;
 		height:2em; width:2em;
-		margin:0.75em;
-		float:left;
+		margin:1em 0.2em 1em 0.2em;
 	}
 	#burger div{
 		position:absolute;
@@ -117,7 +127,7 @@ hr{
 	}
 	#headerNavPadding {
 		height:
-			3.5em;/* #csid line cssHeaderHeight */
+			5em;/* #csid line cssHeaderHeight */
 	}
 	#burgerInput:checked ~ #headerNav{
 		transform:translateY(100%);
@@ -163,10 +173,20 @@ hr{
 		height:auto;
 	}
 	#headerLogo {
-		height:80px;
-		width:200px;
-		background-color:red;
+		height:7em;
 		float:left;
+		margin:0.8em;
+	}
+	#headerLogoImg {
+		float:left;
+		height:auto;
+		width:auto;
+		max-height:100%;
+	}
+	#headerLogoChar {
+		float:left;
+		padding-top:1.5em;
+		height:4em;
 	}
 	#burgerButton{
 		display:none;
@@ -175,7 +195,7 @@ hr{
 	
 	#headerNavPadding{
 		float:right;
-		height:2em;
+		height:4.6em; /*headerLogoのheightに連動必要*/
 	}
 	#headerNav ul{
 		clear:right;
@@ -188,7 +208,7 @@ hr{
 	}
 	#headerNav a {
 		display:block;
-		width:8em; height:4em;
+		width:8em; height:4em; /*headerLogoのheightに連動必要*/
 		padding-top:2em;
 		/*margin-top:5em;*/
 		
@@ -209,3 +229,10 @@ hr{
 	border-bottom: solid 0.16em #364675;
 }
 
+#update {
+	height:12em;
+	overflow-y:scroll;
+	width:auto;
+	border:2px solid #bbb;
+	padding:10px 20px;
+}
