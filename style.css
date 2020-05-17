@@ -3,6 +3,7 @@
 *{
 	margin:0;
 	padding:0;
+	font-family:'Noto Sans',sans-serif;
 }
 :root {
 	background-color:#364675;
@@ -25,6 +26,35 @@ main li{
 }
 main ul{
 	margin:1em 0;
+}
+figure {
+	box-sizing:border-box;
+	padding-bottom:1em;
+}
+figure img {
+	max-height: calc(100% - 2em);
+	max-width:100%;
+}
+figure figcaption {
+	display:block;
+	width:auto;
+	text-align:center;
+	line-height:1.5em;
+	position:relative;
+}
+figure figcaption:before{
+	/*content:"^ ";
+	border-right:0.5em solid transparent;
+	border-left:0.5em solid transparent;
+	border-bottom:0.8em solid black;
+	position:absolute;
+	transform:translateX(-120%) translateY(25%);*/
+}
+
+@media (max-width: 767px){
+}
+@media (min-width: 768px){
+	
 }
 
 @media (max-width: 767px){
@@ -246,9 +276,15 @@ main{
 
 #mainChar h2 {
 	/*display:inline-block;*/
+	font-size:1.5em;
+	font-weight:bold;
 	margin-bottom:0.8em;
 	width:auto;
 	border-bottom: solid 0.16em #364675;
+}
+#mainChar h3 {
+	font-size:1.17em;
+	font-weight:bold;
 }
 
 #update {
@@ -321,7 +357,7 @@ table tr:hover {
 	.imageLink p {
 	}
 	
-	/************ ACTIVITY ************/
+	/************ ARCHIVE ************/
 	.teamIntro img{
 		display:block;
 		width:20em;
@@ -347,10 +383,17 @@ table tr:hover {
 	.gallery a:nth-of-type(2n) img {
 		padding:0 0 0.5em 0;
 	}
+	/************ ACTIVITY ************/
+	.activityWithImg figure {
+		margin:1em auto;
+		width:30em;
+		max-width:100%;
+	}
 }
 @media (min-width:768px) {
 	#mainChar {
 	}
+	
 	
 	/************ LINK ************/
 	.imageLink {
@@ -369,7 +412,7 @@ table tr:hover {
 		text-decoration:underline;
 	}
 	
-	/************ ACTIVITY ************/
+	/************ ARCHIVE ************/
 	.teamIntro img{
 		height:20em;
 		margin-right:1em;
@@ -391,11 +434,39 @@ table tr:hover {
 	.gallery a:nth-of-type(3n) img {
 		padding:0 0 0.5em 0;
 	}
+	/************ ACTIVITY ************/
+	.activityWithImg figure {
+		float:right;
+		width:40%;
+		margin-left:1em;
+	}
 }
 
 #footer {
 	display:block;
 	width:auto;
-	height:5em;
+	height:7em;
+}
+.twitterLink {
+	display:block;
+	width:6em;
+	height:6em;
+	float:right;
+}
+.twitterLink img {
+	display:block;
+	padding:2em;
+	height:100%;
+	box-sizing:border-box;
 }
 /*色の指定はheaderに統合*/
+@media (max-width: 767px){
+	#footerMain {
+		padding:1em 0 0 0.6em ;
+	}
+}
+@media (min-width: 768px){
+	#footerMain {
+		padding:1em 0 0 0;
+	}
+}

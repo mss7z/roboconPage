@@ -37,6 +37,7 @@
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="activity.html">Activity</a></li>
+			<li><a href="archive.html">Archive</a></li>
 			<li><a href="member.html">Member</a></li>
 			<li><a href="link.html">Link</a></li>
 		</ul>
@@ -58,18 +59,19 @@
 		<p>
 			ロボットコンテスト、通称「ロボコン」は、4月末にNHKから競技課題が発表され、私たちはその競技課題に沿ったロボットを10月の地区大会に向けて製作します。<br>
 			そこで活躍したロボットが12月初頭に有明アリーナで行われる全国大会に進むことができます。<br>
+			詳細は<a href="http://www.official-robocon.com/kosen/">高専ロボコン運営公式ページ</a>(NHKのWebページに飛びます)
 		</p>
 	</article>
 	<article>
+		<h2>機械班</h2>
 		<section>
-			<h3>機械班</h3>
 			<p>
 				機械班はロボットのハードウェアを作ります。<br>
 				機械班はおおまかに設計班と製作班に分けることができます。<br>
 			</p>
 		</section>
 		<section>
-			<h4>設計班</h4>
+			<h3>設計班</h3>
 			<p>
 				設計班は主にロボットのハードウェアの設計を行います。<br>
 				設計ではロボットの構想を練ったりと、知識、技術、アイデアを必要とする役職です。<br>
@@ -77,7 +79,7 @@
 			</p>
 		</section>
 		<section>
-			<h4>製作班</h4>
+			<h3>製作班</h3>
 			<p>
 				製作班は設計者が起こした図面をもとにロボットのパーツを作る仕事です。<br>
 				製作班では、製作の基礎(けがき、ボール盤、旋盤、フライス盤)を早いうちから身につけることができます。<br>
@@ -87,31 +89,39 @@
 	</article>
 	
 	<article>
+		<h2>電気班</h2>
 		<section>
-			<h3>電気班</h3>
 			<p>
-				電気班はロボットのソフトウェアを作ります。<br>
-				主に回路の製作とプログラミングなどを行います。<br>
+				電気班は、主に回路の製作とプログラミングなどを行います。（班は分かれていません）<br>
 				ロボットが完成すると目立たない陰の部分ではありますがロボットの頭脳とも言え、回路がなければロボットは動くことができません。<br>
+			</p>
+		</section>
+		<section class="activityWithImg">
+			<h3>回路の制作</h3>
+			<figure>
+				<img src="image/activity/motorDriver.jpg" alt="モータドライバ" title="モータドライバ">
+				<figcaption>モータードライバ</figcaption>
+			</figure>
+			<p>
+				ロボットに搭載されるモータやエアシリンダーといった動力源をコントロールするには、回路が必要です。<br>
+				ユニバーサル基板、もしくは外注のプリント基板を用いて回路を製作します。
+			</p>
+			<hr>
+		</section>
+		<section class="activityWithImg">
+			<h3>プログラミング</h3>
+			<figure>
+				<img src="image/activity/cppCode.png" alt="C++" title="C++">
+				<figcaption>C++</figcaption>
+			</figure>
+			<p>
+				ロボットを動かすためのソフトウェアを作ります。<br>
+				主に、C++や高専の授業でも用いられているC言語を使って、プログラミングしていきます。
 			</p>
 		</section>
 	</article>
 </article>
-<article>
-	<section>
-		<h2 id="machineIntro">機体紹介</h2>
-		<p>
-			これまでに、弊部で作られ、大会に出場してきたロボットを紹介します。
-		</p>
-		<ul>
-			<li><a href="2014.html">2014年度大会「出前迅速」</a></li>
-			<li><a href="2015.html">2015年度大会「輪花繚乱」</a></li>
-			<li><a href="2016.html">2016年度大会「ロボットニューフロンティア」</a></li>
-			<li><a href="2017.html">2017年度大会「大江戸ロボット忍法帖」</a></li>
-			<li><a href="2018.html">2018年度大会「Bottle-Flip Cafe」</a></li>
-		</ul>
-	</section>
-</article>
+
 </div> <!-- mainChar end -->
 
 <!-- #csid global start htmlFooter -->
@@ -119,8 +129,9 @@
 <hr> <!-- float解除など -->
 </main>
 <footer id="footer">
-	<div class="mother">
-		Copyright &copy; 2020 NIT,Akita College Robocon All Rights Reserved.
+	<div class="mother" id="footerMain">
+		<small>Copyright &copy; 2020 NIT,Akita College Robocon All Rights Reserved.</small>
+		<a class="twitterLink" href="https://twitter.com/robo_akita"><img src="image/Twitter_Logo_WhiteOnBlue.png"></a>
 	</div>
 </footer>
 </body>
