@@ -15,34 +15,23 @@ hr{
 	clear:both;
 	border:none;
 }
-main article{
-	margin-bottom:3em;
-}
-main section{
-	margin-bottom:1em;
-}
-main li{
-	margin-left:3em;
-}
-main ul{
-	margin:1em 0;
-}
-figure {
+
+main figure {
 	box-sizing:border-box;
 	padding-bottom:1em;
 }
-figure img {
+main figure img {
 	max-height: calc(100% - 2em);
 	max-width:100%;
 }
-figure figcaption {
+main figure figcaption {
 	display:block;
 	width:auto;
 	text-align:center;
 	line-height:1.5em;
 	position:relative;
 }
-figure figcaption:before{
+main figure figcaption:before{
 	/*content:"^ ";
 	border-right:0.5em solid transparent;
 	border-left:0.5em solid transparent;
@@ -50,11 +39,28 @@ figure figcaption:before{
 	position:absolute;
 	transform:translateX(-120%) translateY(25%);*/
 }
+main article{
+	margin-bottom:3em;
+}
+main section{
+	margin-bottom:1.5em;
+}
+main ul{
+	margin:1em 0;
+}
+
 
 @media (max-width: 767px){
+	main li{
+		margin-bottom:1.3em;
+		margin-left:1.5em;
+	}
 }
 @media (min-width: 768px){
-	
+	main li{
+		margin-bottom:0.5em;
+		margin-left:3em;
+	}
 }
 
 @media (max-width: 767px){
@@ -167,8 +173,9 @@ figure figcaption:before{
 		max-height:100%;
 		bottom:100%;
 		left:0;
+		opacity:0;
 		z-index:100;
-		transform:translateY(0%);
+		/*transform:translateY(0%);*/
 		transition:300ms ease;
 	}
 	#headerNavPadding {
@@ -177,6 +184,7 @@ figure figcaption:before{
 	}
 	#burgerInput:checked ~ #headerNav{
 		transform:translateY(100%);
+		opacity:1;
 	}
 	
 	/*メニューを開いた時の背景となる薄黒い何か*/
@@ -190,6 +198,8 @@ figure figcaption:before{
 		opacity:0;
 		transform: translateY(0%);
 		transition: 300ms ease;
+		-webkit-tap-highlight-color: transparent;
+		/*Blink系のスマホブラウザでタップした時チカッてなるのを防ぐ*/
 	}
 	#burgerInput:checked ~ #burgerBack {
 		transform: translateY(100%);
@@ -206,8 +216,8 @@ figure figcaption:before{
 	}
 	#headerNav a {
 		display:block;
-		width:auto; height:3em;
-		padding-top:1em;
+		width:auto; height:3.5em;
+		padding-top:1.25em;
 		line-height:1;
 		text-align:center;
 		box-sizing:border-box;
