@@ -6,6 +6,7 @@
 	font-family:'Noto Sans',sans-serif;
 }
 :root {
+	font-size:16px;
 	background-color:#364675;
 }
 .dispNone{
@@ -29,15 +30,6 @@ main figure figcaption {
 	width:auto;
 	text-align:center;
 	line-height:1.5em;
-	position:relative;
-}
-main figure figcaption:before{
-	/*content:"^ ";
-	border-right:0.5em solid transparent;
-	border-left:0.5em solid transparent;
-	border-bottom:0.8em solid black;
-	position:absolute;
-	transform:translateX(-120%) translateY(25%);*/
 }
 main article{
 	margin-bottom:3em;
@@ -74,9 +66,15 @@ main ul{
 		margin:0 0.6em;
 	}
 }
-@media (min-width:900px){
+@media (min-width:900px) and (max-width:1199px){
 	.mother {
 		width:880px;
+		margin:0 auto;
+	}
+}
+@media (min-width:1200px){
+	.mother {
+		width:1180px;
 		margin:0 auto;
 	}
 }
@@ -283,6 +281,29 @@ main{
 	background-color:white;
 	padding:1em 0;
 }
+.locate {
+	margin-bottom:1em;
+}
+.locate *{
+	display:inline-block;
+	position: relative;
+	padding-left:1em;
+	padding-right:0.5em;
+	line-height:1.2em;
+}
+.locate *:before{
+	position:absolute;
+	top:0.3em;/*(line-height 1.2em / 2) - border 0.3em */
+	left:0;
+	width:0;
+	height:0;
+	content:"";
+	display:inline-block;
+	border-top:0.3em solid transparent;
+	border-bottom:0.3em solid transparent;
+	border-left:0.5em solid #364675;
+	border-right:none;
+}
 
 #mainChar h2 {
 	/*display:inline-block;*/
@@ -368,7 +389,7 @@ table tr:hover {
 	}
 	
 	/************ ARCHIVE ************/
-	.teamIntro img{
+	.teamIntro>img , .teamIntro>figure{
 		display:block;
 		width:20em;
 		max-width:100%;
@@ -423,12 +444,10 @@ table tr:hover {
 	}
 	
 	/************ ARCHIVE ************/
-	.teamIntro img{
+	.teamIntro>img , .teamIntro>figure{
 		height:20em;
 		margin-right:1em;
 		float:left;
-	}
-	.teamIntro p{
 	}
 	.gallery:after{
 		content:"※クリックするとするとフルサイズで開きます";
