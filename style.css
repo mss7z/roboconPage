@@ -40,6 +40,10 @@ main section{
 main ul{
 	margin:1em 0;
 }
+main p {
+	font-size:1em;
+	line-height:1.9em;
+}
 
 
 @media (max-width: 767px){
