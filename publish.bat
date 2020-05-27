@@ -2,7 +2,7 @@
 cd /d %~dp0
 setlocal
 set "exclusionFile=*.bat .gitignore *Template.html robots.txt"
-set "exclusionDir=working .git"
+set "exclusionDir=working .git release"
 if exist release\robots.txt (
 	del release\robots.txt
 )
