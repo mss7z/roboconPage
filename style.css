@@ -287,6 +287,7 @@ main{
 }
 .locate {
 	margin-bottom:1em;
+	background-color:#c2c9dc;
 }
 .locate *{
 	display:inline-block;
@@ -376,6 +377,11 @@ table tr:hover {
 	background-color:#cccbe2;
 }
 
+.gallery:after{
+	display:block;
+	clear:both;
+}
+
 @media (max-width:767px) {
 	#mainChar {
 		margin:0 0.6em;
@@ -419,7 +425,7 @@ table tr:hover {
 		padding:0 0 0.5em 0;
 	}
 	/************ ACTIVITY ************/
-	.activityWithImg figure {
+	.activityWithImg figure , .rightImg {
 		margin:1em auto;
 		width:30em;
 		max-width:100%;
@@ -468,7 +474,7 @@ table tr:hover {
 		padding:0 0 0.5em 0;
 	}
 	/************ ACTIVITY ************/
-	.activityWithImg figure {
+	.activityWithImg figure , .rightImg{
 		float:right;
 		width:40%;
 		margin-left:1em;
