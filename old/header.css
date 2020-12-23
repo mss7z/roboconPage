@@ -1,0 +1,313 @@
+/*====================header start====================*/
+
+/*===============logo start===============*/
+#A{
+    position:absolute;
+    top:5px;
+    left:25px;
+    z-index:8;
+    float: left;
+    transform-origin:50% 50%;
+    animation-name: logo;
+    animation-duration: 32s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -moz-transform-origin:50% 50%;
+    -moz-animation-name: logo;
+    -moz-animation-duration: 32s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-name: logo;
+    -webkit-animation-duration: 32s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -o-transform-origin:50% 50%;
+    -o-animation-name: logo;
+    -o-animation-duration: 32s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+    -ms-transform-origin:50% 50%;
+    -ms-animation-name: logo;
+    -ms-animation-duration: 32s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: infinite;
+}
+#N{
+    position:absolute;
+    top:5px;
+    left:25px;
+    z-index:7;
+    float: left;
+    transform-origin:50% 50%;
+    animation-name: logo;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -moz-transform-origin:50% 50%;
+    -moz-animation-name: logo;
+    -moz-animation-duration: 24s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-name: logo;
+    -webkit-animation-duration: 24s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -o-transform-origin:50% 50%;
+    -o-animation-name: logo;
+    -o-animation-duration: 24s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+    -ms-transform-origin:50% 50%;
+    -ms-animation-name: logo;
+    -ms-animation-duration: 24s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: infinite;
+}
+#I{
+    position:absolute;
+    top:5px;
+    left:25px;
+    z-index:6;
+    float: left;
+    transform-origin:50% 50%;
+    animation-name: logo;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -moz-transform-origin:50% 50%;
+    -moz-animation-name: logo;
+    -moz-animation-duration: 16s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-name: logo;
+    -webkit-animation-duration: 16s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -o-transform-origin:50% 50%;
+    -o-animation-name: logo;
+    -o-animation-duration: 16s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+    -ms-transform-origin:50% 50%;
+    -ms-animation-name: logo;
+    -ms-animation-duration: 16s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: infinite;
+}
+#T{
+    position:absolute;
+    top:5px;
+    left:25px;
+    z-index:5;
+    float: left;
+    transform-origin:50% 50%;
+    animation-name: logo;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -moz-transform-origin:50% 50%;
+    -moz-animation-name: logo;
+    -moz-animation-duration: 8s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-name: logo;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -o-transform-origin:50% 50%;
+    -o-animation-name: logo;
+    -o-animation-duration: 8s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+    -ms-transform-origin:50% 50%;
+    -ms-animation-name: logo;
+    -ms-animation-duration: 8s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: infinite;
+}
+@keyframes logo{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@-moz-keyframes logo{
+    from{-moz-transform: rotate(0deg);}
+    to{-moz-transform: rotate(360deg);}
+}
+@-webkit-keyframes logo{
+    from{-webkit-transform: rotate(0deg);}
+    to{-webkit-transform: rotate(360deg);}
+}
+@-o-keyframes logo{
+    from{-o-transform: rotate(0deg);}
+    to{-o-transform: rotate(360deg);}
+}
+@-ms-keyframes logo{
+    from{-ms-transform: rotate(0deg);}
+    to{-ms-transform: rotate(360deg);}
+}
+/*===============logo end===============*/
+/*
+p.akita{
+    line-height: 1.15em;
+    position:absolute;
+    font-weight:bold;
+    position:absolute;
+    font-size:44px;
+    top:15px;
+    left:282px;
+    font-family:'Impact',monospace;
+    color:#ddf;
+text-shadow:
+0 -1px 0 #88a,
+0 -2px 0 #88a,
+0 -3px 0 #88a,
+0 -4px 0 #88a,
+0 -5px 0 #88a,
+0 -6px 0 #88a,
+3px -2px 6px #000;
+}
+p.robocon{
+    position:absolute;
+    font-size:107px;
+    top:-20px;
+    left:380px;
+    font-family:'Impact',monospace;
+    color:#ddf;
+text-shadow:
+0 -1px 0 #88a,
+0 -2px 0 #88a,
+0 -3px 0 #88a,
+0 -4px 0 #88a,
+0 -5px 0 #88a,
+0 -6px 0 #88a,
+3px -2px 6px #000;
+}
+*/
+/*====================header end====================*/
+
+
+
+/*====================menu start====================*/
+#dropmenu {
+  list-style-type: none;
+  width: 780px;
+  height: 40px;
+  margin: 0px;
+  padding: 0px;
+  background:#55a;
+  background: -moz-linear-gradient(top, #88d, #3c3c7e);
+  background: -ms-linear-gradient(top, #88d, #3c3c7e);
+  background: -webkit-linear-gradient(top, #88d, #3c3c7e);
+  background: -o-linear-gradient(top, #88d, #3c3c7e);
+  background: linear-gradient(to bottom, #88d, #3c3c7e);
+  border-bottom: 5px solid #99b;
+
+  position:absolute;
+  top:120px;
+
+  box-shadow: 0 0 3px 1px rgba(0,0,0,0.9);
+  -moz-box-shadow: 0 0 3px 1px rgba(0,0,0,0.9);
+  -webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,0.9);
+  -o-box-shadow: 0 0 3px 1px rgba(0,0,0,0.9);
+  -ms-box-shadow: 0 0 3px 1px rgba(0,0,0,0.9);
+}
+
+#dropmenu li {
+  position: relative;
+  width: 20%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#dropmenu li a {
+  display: block;
+  margin: 0;
+  padding: 14px 0 ;
+  color: #bbb;
+  text-shadow:-1px -1px 1px rgba(0,0,0,0.9),0px 0px 3px rgba(255,255,255,0.4);
+  font-size: 17px;
+  font-family:'Impact',monospace;
+  line-height: 12px;
+  text-decoration: none;
+}
+#dropmenu li ul {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  z-index:1;
+}
+#dropmenu li ul li{
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  color: #fff;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  transition: .2s;
+  z-index:1;
+}
+#dropmenu li ul li a{
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  padding: 13px 15px;
+  background: /*#3c3c7e;*/rgba(60,60,126,0.9);
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+}
+#dropmenu li:hover > a{
+  background:#55a;
+/*  border-top: 1px solid #585880;
+  border-bottom: 1px solid #181840;*/
+  color:#fff
+}
+
+#dropmenu > li:hover > a{
+  background: -moz-linear-gradient(top, #88d, #3c3c7e);
+  background: -ms-linear-gradient(top, #88d, #3c3c7e);
+  background: -webkit-linear-gradient(top, #88d, #3c3c7e);
+  background: -o-linear-gradient(top, #88d, #3c3c7e);
+  background: linear-gradient(to bottom, #88d, #3c3c7e);
+  color: #fff;
+  border-bottom: 5px solid #fff;
+  text-shadow:-1px -1px 1px rgba(0,0,0,0.9),0px 0px 3px rgba(255,255,255,0.4);
+  z-index:1;
+}
+#dropmenu li:hover ul li{
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  overflow: visible;
+  height: 38px;
+  border-top: 1px solid #66a;
+  border-bottom: 1px solid #113;
+  z-index:1;
+}
+#dropmenu li:hover ul li:first-child{
+  border-top: 0;
+}
+#dropmenu li:hover ul li:last-child{
+  border-bottom: 0;
+}
+/*#dropmenu li:hover ul li:last-child a{
+  border-radius: 0 0 3px 3px; 
+}*/
+
+a#menu_now {
+  box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.5) inset;
+  background: -moz-linear-gradient(top, #66b, #226);
+  background: -ms-linear-gradient(top, #66b, #226);
+  background: -webkit-linear-gradient(top, #66b, #226);
+  background: -o-linear-gradient(top, #66b, #226);
+  background: linear-gradient(to bottom, #66b, #226);
+  color: #fff!important;
+  text-shadow:-1px -1px 1px rgba(255,255,255,0.4),1px 1px 1px rgba(0,0,0,0.9)!important;
+  border-bottom: 5px solid #fff;
+}
+/*====================menu end====================*/

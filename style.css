@@ -45,6 +45,9 @@ main p {
 	line-height:1.9em;
 	margin-bottom:1em;
 }
+main a {
+	font-weight:bold;
+}
 
 
 @media (max-width: 767px){
@@ -484,7 +487,7 @@ table tr:hover {
 #footer {
 	display:block;
 	width:auto;
-	height:7em;
+	padding-bottom:1em;
 }
 .twitterLink {
 	display:block;
@@ -498,14 +501,34 @@ table tr:hover {
 	height:100%;
 	box-sizing:border-box;
 }
+
 /*色の指定はheaderに統合*/
 @media (max-width: 767px){
 	#footerMain {
 		padding:1em 0 0 0.6em ;
+	}
+	footer ul{
+		margin:1.0em 0;
+	}
+	footer li{
+		margin-bottom:1.3em;
+		margin-left:1.5em;
 	}
 }
 @media (min-width: 768px){
 	#footerMain {
 		padding:1em 0 0 0;
 	}
+	#footerSitemap{
+		float:left;
+	}
+	footer ul{
+		margin:0 0 0 0.5em;
+	}
+	footer li{
+		margin-bottom:0em;
+		margin-left:1.5em;
+	}
 }
+
+
