@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /image/link/
 Disallow: /image/Twitter_Logo_WhiteOnBlue.png
 Disallow: /old/
+Allow: /image/gallery/
