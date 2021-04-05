@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#364675">
 	<!-- #csid file start htmlHeaderHeadUniqueFile -->
-	<title>秋田高専ロボコン部 Link</title>
+	<title>秋田高専ロボコン部 リンク</title>
 	<!-- #csid end -->
 </head>
 
@@ -20,19 +20,23 @@
 	<input type="checkbox" id="burgerInput" class="dispNone">
 	<div id="headerMain">
 		<a href="index.html" id="headerLogo">
-			<img src="image/logoWhite3.png" alt="Robocon Akita Logo" title="logo" id="headerLogoImg">
+			<img src="image/logoWhite3.png" alt="秋田高専ロボコン部" title="logo" id="headerLogoImg">
 			<img src="image/logoChar.png" alt="秋田高専ロボコン部" title="秋田高専ロボコン部" id="headerLogoChar">
 		</a>
-		<small id="headerRight">
-			<div id="headerRightLink">
-				<a href="location.html">部室の場所</a>
-				<a href="link.html#jumpSiteMap">サイトマップ</a>
-			</div>
-			<hr>
-			<p id="headerRightChar">
-				部のTwitterは<a href="https://twitter.com/robo_akita">こちら</a>
-			</p>
-		</small>
+		<nav id="headerRightForPC">
+			<!-- #csid global start shortcutNav -->
+			<small class="shortcutNav">
+				<div class="shortcutNavLink">
+					<a href="location.html">部室の場所</a>
+					<a href="link.html#gotoSiteMap">サイトマップ</a>
+				</div>
+				<hr>
+				<p class="shortcutNavChar">
+					部のTwitterは<a href="https://twitter.com/robo_akita">こちら</a>
+				</p>
+			</small>
+			<!-- #csid end -->
+		</nav>
 		<label for="burgerInput">
 			<div id="burgerButton">
 				<div id="burger">
@@ -55,6 +59,20 @@
 			<li><a href="member.html">メンバー</a></li>
 			<li><a href="link.html">リンク</a></li>
 		</ul>
+		<div id="shortcutNavForPhone">
+			<!-- #csid global start shortcutNav -->
+			<small class="shortcutNav">
+				<div class="shortcutNavLink">
+					<a href="location.html">部室の場所</a>
+					<a href="link.html#gotoSiteMap">サイトマップ</a>
+				</div>
+				<hr>
+				<p class="shortcutNavChar">
+					部のTwitterは<a href="https://twitter.com/robo_akita">こちら</a>
+				</p>
+			</small>
+			<!-- #csid end -->
+		</div>
 	</nav>
 	<hr>
 </div>
@@ -68,11 +86,11 @@
 <div id="mainChar">
 <div class="locate">
 	<a href="index.html">ホーム</a>
-	<span>Link</span>
+	<span>リンク</span>
 </div>
 <article>
 	<section>
-		<h2>ロボコン関連</h2>
+		<h2 id="gotoRoboconLink">ロボコン関連</h2>
 		<a href="http://www.official-robocon.com/kosen/" class="imageLink">
 			<img src="image/link/robocon.png">
 			<p>言わずと知れた高専ロボコンのHP</p>
@@ -105,40 +123,68 @@
 		
 	</section>
 	<section>
-		<h2>秋田高専</h2>
+		<h2 id="gotoNITAkita">秋田高専</h2>
 		<a href="https://www.akita-nct.ac.jp/" class="imageLink">
 			<img src="image/link/kosen.png" >
 			<p>秋田高専のHP</p>
 		</a>
 	</section>
-	<section id="jumpSiteMap">
+	<section id="gotoSiteMap">
 		<h2>サイトマップ</h2>
 		<!-- #csid global start siteMap -->
 		<ul>
-			<li><a href="index.html">ホーム</a></li>
+			<li>
+				<a href="index.html">ホーム</a>
+				<ul>
+					<li><a href="index.html#gotoJoin">新入生の方へ</a></li>
+					<li><a href="index.html#gotoNationalConvention">祝！全国大会出場！</a></li>
+					<li><a href="index.html#gotoWhatIsRoboconClub">ロボコン部とは？</a></li>
+					<li><a href="index.html#gotoUpdate">更新履歴</a></li>
+				</ul>
+			</li>
 			<li>
 				<a href="activity.html">活動内容</a>
 				<ul>
-					<li><a href="activity.html#kikai">機械班</a></li>
-					<li><a href="activity.html#denki">電気班</a></li>
+					<li><a href="activity.html#gotoWhatIsRobocon">ロボコンとは?</a></li>
+					<li>
+						<a href="activity.html#gotoLocation">活動場所</a>
+						<ul>
+							<li><a href="location.html">部室の場所</a></li>
+						</ul>
+					</li>
+					<li><a href="activity.html#gotoKikai">機械班</a></li>
+					<li><a href="activity.html#gotoDenki">電気班</a></li>
 				</ul>
 			</li>
 			<li>
 				<a href="archive.html">記録</a>
-				<!-- #csid global start archiveUl -->
 				<ul>
-					<li><a href="2014.html">2014年度大会「出前迅速」</a></li>
-					<li><a href="2015.html">2015年度大会「輪花繚乱」</a></li>
-					<li><a href="2016.html">2016年度大会「ロボットニューフロンティア」</a></li>
-					<li><a href="2017.html">2017年度大会「大江戸ロボット忍法帖」</a></li>
-					<li><a href="2018.html">2018年度大会「Bottle-Flip Cafe」</a></li>
-					<li><a href="2019.html">2019年度大会「らん♪ RUN Laundry」</a></li>
-					<li><a href="2020.html">2020年度大会「はぴ☆ロボ自慢」</a></li>
+					<li><a href="archive.html#gotoAboutRobocon">高専ロボコンについて</a></li>
+					<li>
+						<a href="archive.html#gotoMachines">機体紹介</a>
+						<!-- #csid global start archiveUl -->
+						<ul>
+							<li><a href="2014.html">2014年度大会「出前迅速」</a></li>
+							<li><a href="2015.html">2015年度大会「輪花繚乱」</a></li>
+							<li><a href="2016.html">2016年度大会「ロボットニューフロンティア」</a></li>
+							<li><a href="2017.html">2017年度大会「大江戸ロボット忍法帖」</a></li>
+							<li><a href="2018.html">2018年度大会「Bottle-Flip Cafe」</a></li>
+							<li><a href="2019.html">2019年度大会「らん♪ RUN Laundry」</a></li>
+							<li><a href="2020.html">2020年度大会「はぴ☆ロボ自慢」</a></li>
+						</ul>
+						<!-- #csid end archiveUl -->
+					</li>
 				</ul>
-				<!-- #csid end archiveUl -->
 			</li>
 			<li><a href="member.html">メンバー</a></li>
-			<li><a href="link.html">リンク</a></li>
+			<li>
+				<a href="link.html">リンク</a>
+				<ul>
+					<li><a href="link.html#gotoRoboconLink">ロボコン関係</a></li>
+					<li><a href="link.html#gotoNITAkita">秋田高専</a></li>
+					<li><a href="link.html#gotoSiteMap">サイトマップ</a></li>
+				</ul>
+			</li>
 		</ul>
 		<!-- #csid end siteMap -->
 	</section>
@@ -154,30 +200,58 @@
 		<small id="footerSitemap">
 		<!-- #csid global start siteMap -->
 		<ul>
-			<li><a href="index.html">ホーム</a></li>
+			<li>
+				<a href="index.html">ホーム</a>
+				<ul>
+					<li><a href="index.html#gotoJoin">新入生の方へ</a></li>
+					<li><a href="index.html#gotoNationalConvention">祝！全国大会出場！</a></li>
+					<li><a href="index.html#gotoWhatIsRoboconClub">ロボコン部とは？</a></li>
+					<li><a href="index.html#gotoUpdate">更新履歴</a></li>
+				</ul>
+			</li>
 			<li>
 				<a href="activity.html">活動内容</a>
 				<ul>
-					<li><a href="activity.html#kikai">機械班</a></li>
-					<li><a href="activity.html#denki">電気班</a></li>
+					<li><a href="activity.html#gotoWhatIsRobocon">ロボコンとは?</a></li>
+					<li>
+						<a href="activity.html#gotoLocation">活動場所</a>
+						<ul>
+							<li><a href="location.html">部室の場所</a></li>
+						</ul>
+					</li>
+					<li><a href="activity.html#gotoKikai">機械班</a></li>
+					<li><a href="activity.html#gotoDenki">電気班</a></li>
 				</ul>
 			</li>
 			<li>
 				<a href="archive.html">記録</a>
-				<!-- #csid global start archiveUl -->
 				<ul>
-					<li><a href="2014.html">2014年度大会「出前迅速」</a></li>
-					<li><a href="2015.html">2015年度大会「輪花繚乱」</a></li>
-					<li><a href="2016.html">2016年度大会「ロボットニューフロンティア」</a></li>
-					<li><a href="2017.html">2017年度大会「大江戸ロボット忍法帖」</a></li>
-					<li><a href="2018.html">2018年度大会「Bottle-Flip Cafe」</a></li>
-					<li><a href="2019.html">2019年度大会「らん♪ RUN Laundry」</a></li>
-					<li><a href="2020.html">2020年度大会「はぴ☆ロボ自慢」</a></li>
+					<li><a href="archive.html#gotoAboutRobocon">高専ロボコンについて</a></li>
+					<li>
+						<a href="archive.html#gotoMachines">機体紹介</a>
+						<!-- #csid global start archiveUl -->
+						<ul>
+							<li><a href="2014.html">2014年度大会「出前迅速」</a></li>
+							<li><a href="2015.html">2015年度大会「輪花繚乱」</a></li>
+							<li><a href="2016.html">2016年度大会「ロボットニューフロンティア」</a></li>
+							<li><a href="2017.html">2017年度大会「大江戸ロボット忍法帖」</a></li>
+							<li><a href="2018.html">2018年度大会「Bottle-Flip Cafe」</a></li>
+							<li><a href="2019.html">2019年度大会「らん♪ RUN Laundry」</a></li>
+							<li><a href="2020.html">2020年度大会「はぴ☆ロボ自慢」</a></li>
+						</ul>
+						<!-- #csid end archiveUl -->
+					</li>
 				</ul>
-				<!-- #csid end archiveUl -->
 			</li>
 			<li><a href="member.html">メンバー</a></li>
-			<li><a href="link.html">リンク</a></li>
+			<li>
+				<a href="link.html">リンク</a>
+				<ul>
+					<li><a href="link.html#gotoRoboconLink">ロボコン関係</a></li>
+					<li><a href="link.html#gotoNITAkita">秋田高専</a></li>
+					<li><a href="link.html#gotoSiteMap">サイトマップ</a></li>
+				</ul>
+			</li>
 		</ul>
 		<!-- #csid end siteMap -->
 		</small>
@@ -195,7 +269,7 @@
 =====================================================================
    ##  ##    This document was written with Code Sync.
   ##  ##     
- ##  ###### ## ####   Generated time: 2021/04/05(Mon) 17:12:45
+ ##  ###### ## ####   Generated time: 2021/04/05(Mon) 20:56:52
   ##    ##  ## #  ##  Repository: https://github.com/mss7z/codeSync
    ##  ##   ## ####
 =====================================================================

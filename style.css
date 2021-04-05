@@ -95,6 +95,27 @@ main a {
 	background-color:#364675;
 	color:white;
 }
+
+
+.shortcutNavLink *{
+	display:inline-block;
+	position: relative;
+	padding-left:1em;
+	line-height:1.2em;
+}
+.shortcutNavLink *:before{
+	position:absolute;
+	top:0.3em;/*(line-height 1.2em / 2) - border 0.3em */
+	left:0;
+	width:0;
+	height:0;
+	content:"";
+	display:inline-block;
+	border-top:0.3em solid transparent;
+	border-bottom:0.3em solid transparent;
+	border-left:0.5em solid white;
+	border-right:none;
+}
 @media (max-width: 767px){
 	#header{
 		height:
@@ -128,7 +149,7 @@ main a {
 		height:2.8em;
 	}
 	
-	#headerRight{
+	#headerRightForPC{
 		display:none;
 	}
 	
@@ -221,10 +242,10 @@ main a {
 	#headerNav li{
 		list-style-type:none;
 	}
-	#headerNav *:first-child a {
+	#headerNav li:first-child a {
 		border-top:1px solid rgba(255,255,255,0.3);
 	}
-	#headerNav a {
+	#headerNav li a {
 		display:block;
 		width:auto; height:3.5em;
 		padding-top:1.25em;
@@ -232,6 +253,23 @@ main a {
 		text-align:center;
 		box-sizing:border-box;
 		border-bottom:1px solid rgba(255,255,255,0.3);
+	}
+	
+	#shortcutNavForPhone{
+		margin:2em 0em 2em 0em;
+	}
+	.shortcutNav > * {
+		width:auto;
+		text-align:center;
+	}
+	.shortcutNavLink *{
+		margin-left:2em;
+	}
+	.shortcutNavLink *:first-child{
+		margin-left:0em;
+	}
+	.shortcutNavChar{
+		margin:2em 0em 2em 0em;
 	}
 }
 @media (min-width: 768px){
@@ -255,39 +293,22 @@ main a {
 		height:4em;
 	}
 	
-	#headerRight{
-		display:inline-block;
+	#headerRightForPC{
 		float:right;
 		
-		margin:2em 0em 1em 0em;
+		margin:1.5em 0em 0em 0em;
 	}
-	
-	#headerRight > * {
+	.shortcutNav > * {
 		float:right;
 	}
-	#headerRightLink *{
-		display:inline-block;
-		position: relative;
+	.shortcutNavLink *{
 		margin-left:1em;
-		padding-left:1em;
-		line-height:1.2em;
 	}
-	#headerRightLink *:before{
-		position:absolute;
-		top:0.3em;/*(line-height 1.2em / 2) - border 0.3em */
-		left:0;
-		width:0;
-		height:0;
-		content:"";
-		display:inline-block;
-		border-top:0.3em solid transparent;
-		border-bottom:0.3em solid transparent;
-		border-left:0.5em solid white;
-		border-right:none;
-	}
-	#headerRightChar{
+	
+	.shortcutNavChar{
 		margin:1em 0em 1em 0em;
 	}
+
 	
 	#burgerButton{
 		display:none;
@@ -307,7 +328,7 @@ main a {
 		display:inline;
 		float:left;
 	}
-	#headerNav a {
+	#headerNav li a {
 		display:block;
 		width:8em; height:4em; /*headerLogoのheightに連動必要*/
 		padding-top:2em;
@@ -324,6 +345,10 @@ main a {
 	}
 	#headerNav a:hover {
 		border-bottom:solid 0.4em white;
+	}
+	
+	#shortcutNavForPhone{
+		display:none;
 	}
 }
 
