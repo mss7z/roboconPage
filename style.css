@@ -128,6 +128,10 @@ main a {
 		height:2.8em;
 	}
 	
+	#headerRight{
+		display:none;
+	}
+	
 	#burgerButton {
 		position:absolute;
 		top:0;
@@ -250,6 +254,41 @@ main a {
 		padding-top:1.5em;
 		height:4em;
 	}
+	
+	#headerRight{
+		display:inline-block;
+		float:right;
+		
+		margin:2em 0em 1em 0em;
+	}
+	
+	#headerRight > * {
+		float:right;
+	}
+	#headerRightLink *{
+		display:inline-block;
+		position: relative;
+		margin-left:1em;
+		padding-left:1em;
+		line-height:1.2em;
+	}
+	#headerRightLink *:before{
+		position:absolute;
+		top:0.3em;/*(line-height 1.2em / 2) - border 0.3em */
+		left:0;
+		width:0;
+		height:0;
+		content:"";
+		display:inline-block;
+		border-top:0.3em solid transparent;
+		border-bottom:0.3em solid transparent;
+		border-left:0.5em solid white;
+		border-right:none;
+	}
+	#headerRightChar{
+		margin:1em 0em 1em 0em;
+	}
+	
 	#burgerButton{
 		display:none;
 	}
@@ -273,6 +312,10 @@ main a {
 		width:8em; height:4em; /*headerLogoのheightに連動必要*/
 		padding-top:2em;
 		/*margin-top:5em;*/
+		
+		border:0.4em solid transparent;
+		border-top:none;
+		border-bottom:solid 0.4em rgba(255,255,255,0.3);
 		
 		line-height:1;
 		text-align:center;
@@ -318,12 +361,21 @@ main{
 	font-size:1.5em;
 	font-weight:bold;
 	margin-bottom:0.8em;
+	padding:0.3em;
+	padding-left:0.6em;
 	width:auto;
+	background-color:#f2f5fc;
+	
 	border-bottom: solid 0.16em #364675;
+	border-left: solid 0.32em #364675;/*#6e87c2;*/
 }
 #mainChar h3 {
 	font-size:1.17em;
 	font-weight:bold;
+
+	padding:0.2em;
+	padding-left:0.6em;
+	border-left: solid 0.41em #364675;
 }
 
 #update {
