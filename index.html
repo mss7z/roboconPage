@@ -13,7 +13,7 @@
 	<!-- 長い竿灯のための一時的な対応 -->
 	<style>
 	@media (min-width:768px){
-		#RunTurnImgLeft {width:55%;}
+		#RunTurnImgLeft {width:48%;}
 	}
 	</style>
 	<!-- #csid end -->
@@ -27,6 +27,7 @@
 	<div id="headerMain">
 		<a href="index.html" id="headerLogo">
 			<img src="image/logoWhite3.png" alt="秋田高専ロボコン部" title="logo" id="headerLogoImg">
+			<span id="logoNewLineWhenSmallWidth"></span>
 			<img src="image/logoChar.png" alt="秋田高専ロボコン部" title="秋田高専ロボコン部" id="headerLogoChar">
 		</a>
 		<nav id="headerRightForPC">
@@ -95,14 +96,63 @@
 	<span>ホーム</span>
 </div>
 
-<article>
-	<h2 id="gotoJoin">新入生の方へ</h2>
+<article class="activityWithImg">
+	<section>
+		<h2 id="gotoJoin">新入生の方へ</h2>
+		<figure>
+			<img src="image/gallery/2020_A1.jpg" alt="去年のロボット" title="去年のロボット">
+			<figcaption>去年制作した竿燈ロボット<a href="2020.html">(詳細)</a></figcaption>
+		</figure>
+		<p>
+			私たちと一緒にロボットを作りませんか？<br>
+			4月下旬に発表されるルールに基づき、ロボットを作って、10月ごろ(今年は2021年10月10日に東北地区大会)のNHK高専ロボコンに出場しています。<br>
+			簡単に説明すると、様々な技術が身につく楽しい部活です。<br>
+			最新の情報は<a href="https://twitter.com/robo_akita">公式Twitter</a>から確認してくださいね。<br>
+			<br>
+		</p>
+	</section>
+	<section>
+		<figure>
+			<img src="image/location/parts.jpg" alt="部品棚" title="部品棚">
+			<figcaption>電子部品の部品棚</figcaption>
+		</figure>
+		<h3>入部するメリットは？</h3>
+		<p>
+			こんなにメリットが…
+			<ul>
+				<li>高専で学ぶ専門教科の内容を実践できる！(電子回路制作、プログラミング、機械加工、3DCAD、等)</li>
+				<li>部室の部品や機器を使用できる</li>
+				<li>ロボコン楽しい</li>
+				<li>豊富な予算で物作りをできる</li>
+				<li><s>変な先輩がいっぱいいる</s></li>
+			</ul>
+		</p>
+		<h3>部室はどこにあるの？</h3>
+		<p>
+			部室の場所は<a href="location.html">こちら</a>
+		</p>
+		<h3>部費はいくらぐらい？</h3>
+		<p>
+			部費は、去年は1年間で7000円です。<br>
+			今年も同じくらいだと思います。<br>
+			たくさん入部してくれると、1人あたりの部費が安くなります。<br>
+			7000円払えば、部室の旋盤やボール盤、3Dプリンタ、PC、電子部品（写真の部品棚にある）を使えます！<br>
+			部員から徴収する部費の他に、学校の予算も使わせていただいております。<br>
+		</p>
+		<h3>活動時間は？</h3>
+		<p>
+			放課後、17時までです。<br>
+			大会直前には、月に数回、延長の申請をして、18時30分までです。<br>
+			夏休みは平日9時から17時まで<br>
+			春休みは週に3回ぐらい、9時から17時です。<br>
+			だからと言って、毎回参加する必要はありません。<br>
+			<s>休日の活動は、バイトや兼部などでほぼ参加しない部員も多いです。</s><br>
+		</p>
+	</section>
 	<p>
-		私たちと一緒にロボットを作りませんか？<br>
-		簡単に説明すると、様々な技術が身につく楽しい部活です。<br>
 		せっかく、高専に入学したのにロボコンをやらないのはもったいない！<br>
 		ぜひ、ロボコン部への入部を検討してみてください。<br>
-		最新の情報は<a href="https://twitter.com/robo_akita">公式Twitter</a>から確認してくださいね。<br>
+		<s>ところで、このページを誰か見てくれているんですかねぇ</s><br>
 	</p>
 </article>
 
@@ -157,6 +207,10 @@
 <article>
 	<h2 id="gotoUpdate">更新履歴</h2>
 	<div id="update">
+		<h3>令和3年度</h3>
+		■[04/06]デザインを少し変更<br>
+		■[04/06]部室の場所の情報を追加<br>
+		■[04/06]新入生向けの情報をホームに追加<br>
 		<h3>令和2年度</h3>
 		■[01/15]2019年度、2020年度の機体紹介を追加<br>
 		■[01/15]その他、細かい修正・加筆<br>
@@ -214,7 +268,13 @@
 					<li>
 						<a href="activity.html#gotoLocation">活動場所</a>
 						<ul>
-							<li><a href="location.html">部室の場所</a></li>
+							<li>
+								<a href="location.html">部室の場所</a>
+								<ul>
+									<li><a href="location.html#gotoMap">地図</a></li>
+									<li><a href="location.html#gotoAppearance">外観</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li><a href="activity.html#gotoKikai">機械班</a></li>
@@ -267,7 +327,7 @@
 =====================================================================
    ##  ##    This document was written with Code Sync.
   ##  ##     
- ##  ###### ## ####   Generated time: 2021/04/05(Mon) 20:56:52
+ ##  ###### ## ####   Generated time: 2021/04/06(Tue) 16:35:31
   ##    ##  ## #  ##  Repository: https://github.com/mss7z/codeSync
    ##  ##   ## ####
 =====================================================================
